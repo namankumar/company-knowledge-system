@@ -1,0 +1,451 @@
+{
+  "schema": 1,
+  "scope": "Allowlisted original company knowledge retrieval, answer and permission pipeline; no original git history or client data.",
+  "files": [
+    {
+      "path": "app/api/chat.py",
+      "sha256": "49ff6ecb57bf31d717194b66281a78e3d45f12943d9936d4f0f48b7b0d6b23a0",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/api/github_app_webhook.py",
+      "sha256": "eaef20e6dce2794b6003edaafd61f107e8566a3883c10be2da376f1c439e84b7",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/artifacts/store.py",
+      "sha256": "ccfe90e9f4a60b8bdab55af84b6012a8fb577aa8f65bceb07c8c2635bc89e1ca",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/brain/context_invalidation.py",
+      "sha256": "d47eabe373228f4074043869c3856603d6602e6881b8a4dc031bb0eb3ca59f94",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/brain/entities.py",
+      "sha256": "7f6f2a04b44dcea6de988a478b8dad5b564a5a3a06c0539b92cd293bc3d8fd52",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/brain/loop_lifecycle.py",
+      "sha256": "6b855c53357dcd3e311d3739333f0b95c78f74d4775f0a09f9d5ba3c4251536d",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/auth.py",
+      "sha256": "1fc2335aa02acc4fb7d093b74a2c30d787e715696f7fd06f84de9e81a36f6edc",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "app/core/composio_client.py",
+      "sha256": "2c5b432ac4ab12c0bfd7af55c483348aa0b03757f035b740743620d66e55825f",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/config.py",
+      "sha256": "529209f9015d25d7a19f48f7844d5a37491f273597a33702257e3884a7dd4600",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "app/core/db.py",
+      "sha256": "6dac87e01fa49d16ecb33412f2cd01c80b852b3242416ecbf2ccd99084b4305a",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/destination_permissions.py",
+      "sha256": "56b2d957000d368d4b468e5f5ca1e861560d657f5246945e99df98deee1d2305",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/github_app.py",
+      "sha256": "79cc140111971c28891a6968a4a43ef64c64b38136f2138b7efd24801bfaaf07",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/permission_adapters.py",
+      "sha256": "1a749f6464c11683c1c974c0a8676bd7482cbe8394b4251ca0b2b6a902b221fb",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/permission_audit.py",
+      "sha256": "513ce05ea9f301aa8ac5391c82debedfefa03966fe157b43580d4b7456417fbb",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/permissions.py",
+      "sha256": "7dc9f8d1c348c5ff683ede75311fe1cd5c93cdb7ee72b07a695c04d6e05555ec",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/principals.py",
+      "sha256": "3efa4c08068e59db79daf016cf0e5ab512fe0546277c337f2d6a077d8bad118e",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/redis.py",
+      "sha256": "4bce89a67f17a002a621c8d7a7ff1f0532c8becebaaf91972736661e3dfd4051",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/source_imports.py",
+      "sha256": "b70f6266de2de8726ce8a1592d957752cf9671d99c7fc3944d203b10742de731",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/source_permissions.py",
+      "sha256": "e57f35433f2c509aa735ad4e0664d862cca2d83ee546be4dd89658aac58e7225",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "app/core/tenant_settings.py",
+      "sha256": "c9af19a4da7f9d101a71cc275ee68540eace6cee27c18d42e32ed88769652cad",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/core/trace.py",
+      "sha256": "af7f2a95b51530ae340b6f8c5cc39f9f1732325451c810a4e6bd1e4aa01fece7",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/delivery/slack_dm.py",
+      "sha256": "1c567a626b0f013d52f09a25e70503527368afcc65b5c12aef4bc52f83ca4f75",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/ingestion/acl_stamping.py",
+      "sha256": "bfdfe4eed94b54c79284ee55b742db8287b75f48cd68a131c11f2d2dc2c9621b",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/ingestion/backfill.py",
+      "sha256": "3814145aae2853ae35898bb1fcda8e21e4a2172220094288f8f2c320b2dc43d6",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/ingestion/event_identity.py",
+      "sha256": "3f86d6951ff9e20e1195cdb79c52a9cdf870109662b2a694ba57dc256ca0bf35",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/ingestion/noise.py",
+      "sha256": "c3fa72917e81ddf9550f48a71fddba3d700223d47844923891752d10281d0925",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/ingestion/normalizers.py",
+      "sha256": "0884efb804525d5427e3a773c44606ca6ad0ab7273b301feeb5f5c97ab8bab28",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/catalog.py",
+      "sha256": "c2e0180ebacdac02a64bb7930cae18759dd7b74e523dddee1f3c309162addf88",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/client.py",
+      "sha256": "95699a7edf1cbea7bc30a7bba63f7ab9fee7cd2e25a6ae104108917625eec712",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/failures.py",
+      "sha256": "431c96091bc4feca74ef49d41ade91141ff6397d9cf5062c212bc3d6284e5963",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/fallback.py",
+      "sha256": "ae10a23b439b2251e6f4e5b22069ed0dc3da63c77a248628ad8dce13f8499d01",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/policies.py",
+      "sha256": "241edf41df99fa94fd71c64065913119d8cd6967f46c1edd5a307ee38325b4a9",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/anthropic.py",
+      "sha256": "89066107b46c387e1015bd929c9a868a3502a8130a76790ce0e1498745f1a431",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/base.py",
+      "sha256": "92fe2e02dd939132db41ba5bddbbc956941e14a1ccbb03260edae1ee447d55a2",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/baseten.py",
+      "sha256": "942a819b05ecbdb6962fae8f9255c0638daa4855d511d1512bb294d4212df032",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/claude_cli.py",
+      "sha256": "f3f6469ef40f03d03f12526869cb590acf50547636bbced7c77cf05bbc87c2e1",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/deepinfra.py",
+      "sha256": "257871565fc98a645ff9547c15d54b8444b7ed7e90c36b85ad851f7c58f2d5d5",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/groq.py",
+      "sha256": "a1b76e962617961d2b7a72b2d5feb052b7b364c6495b1f6e7a9dc7f91b477458",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/lilac.py",
+      "sha256": "f321829129b93bd201ae38f3ff51a532abb7daa7c72b214f2a13664001d6c608",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/openai.py",
+      "sha256": "0e9267daa36f8320c9ffd769e44f591e3190f8c5cb9f105d9fe58ed8aa248c67",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/openai_compatible.py",
+      "sha256": "2f53bd896ed3712f58d9573b3a332a670c1f2f2e6490919f0ee0e6aa9a84d865",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/openrouter.py",
+      "sha256": "49c564b63334d22b469020dd8f5803c50bcbd792f604527a9b6758663b6005d7",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/providers/wafer.py",
+      "sha256": "e11d87cd2280362f0dfa6511fddef95d7f0896a15e385800630b84be709d92f9",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/router.py",
+      "sha256": "70d1f4c239b6ff3da96f80fcb9a3ffd1efdd80359b3cb02e0a77baf375c3f9b7",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/llm/validators.py",
+      "sha256": "7d71729c6039bdeae8ec1c58d79f00cb7903bde8efb83346eabda088f263cff1",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/personalization/channel_context.py",
+      "sha256": "f3067467ee4896b5e69152df136d4ac2265b59f75a5021e631c9fc4f36ad3e3f",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/personalization/person_context.py",
+      "sha256": "67c70bfe311acb29d4e0909fe515b12e186fb18fe84642d91f4a3e48b4b182e8",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/personalization/tenant_context.py",
+      "sha256": "4a043a9ac345151537eb622098015ded2059b8cd314a03c8613992279b62e78f",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/personalization/user_context.py",
+      "sha256": "b75c5420af493e88f0e346c2dda4e68e0a327a507b6f553d127a1c1e82de3a23",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/personalization/workstream_digest.py",
+      "sha256": "1ba28f593f0a90c147a77fd34bb491130965e3a2e968bee1b151cf32869375c0",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/presentation/alerts.py",
+      "sha256": "5fb76864277b99c4a091275d912f4f897a5ece4c9355df354f27729645bbf0cf",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/presentation/artifacts.py",
+      "sha256": "e444978126dcef7f6c87ad865362797979d5f6fe5022c468fb611f32ad3ffc8b",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/presentation/chat.py",
+      "sha256": "6e6678a6aec165a0f2c286e9a32e5bc812535740910e52d11de76ebba6de7a3a",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/presentation/okrs.py",
+      "sha256": "781ce6329a31e2f816aca5b63dd28e84b159769235a04024b3b6307041e57be4",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "app/presentation/workstreams.py",
+      "sha256": "fe22762f3720d7dc569ae17c3de6fd9b3763801761f966d2ae91e3402f52083d",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/retrieval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/retrieval/embed.py",
+      "sha256": "2a3aa62ed6e5e42d2e3bd32c36c0c7635ba2e570cd397741ff7d66cb0b1d9687",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/retrieval/pack_policies.py",
+      "sha256": "74c3aa0e90a3df1e216cd1ae0d40a4c780b96e186e055ee646fcf8bf3532fd2c",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/retrieval/retrieve.py",
+      "sha256": "f8278b5c8d5e1559cd992c9c250e1a821a79c83fe297ed52f5a5e1ddb0a1b446",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/brief.py",
+      "sha256": "4fa45a0db1287807a1859dab0bc3eef7dd28e1eca9821d137e7e970b7f8297a1",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/brief_weekly.py",
+      "sha256": "c363efa35589f3a855b4059699cead311a2f99e1b67f1f5688b7a230cc2d7afb",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/chat.py",
+      "sha256": "fb55e1a6d11890e00fabd4e6bd4f4e8226ffda4c474f2fb073084faeab497a6f",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/comms_draft.py",
+      "sha256": "92893ee9c0726403854cb293a7e233158d1149d2f281ca9b94f0460beaaa7a97",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/drift.py",
+      "sha256": "ad691d586cf1a786ae2ba7ca577d85d7a0f08f2fc99f1cd40d8e6eeca8511f35",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/feedback_tuning.py",
+      "sha256": "c75bc9596595c86d26adf6419725fbd9e3e2c36389223ae40a685bcab6f06435",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/okr_context.py",
+      "sha256": "afd98e6d48ecb635d4489c8dc72f86d008335022264b86643aa7bd6d2eb5dcc5",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/okr_pace.py",
+      "sha256": "186a042f925c4305e9089f2b9f17096d73b9cc26bc7c47771e48a5f68dc6e3d5",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/open_loops.py",
+      "sha256": "c456dcca93d52575cd44a621d49a7ded63f021f57c4b95f50af4ccaa5c6eb8e7",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/verifier.py",
+      "sha256": "ee8952b6e42682cae6830518dbd3c2c6280dbf60558c7ccf00489a995352afb1",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/synthesis/work_signals.py",
+      "sha256": "19a26c5d8cec20ca3f9709fb32eedff0868b51a68741bbbaea6336846e3330bd",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/workers/health.py",
+      "sha256": "139f3c2545cb2689acf9f2c50068562c53007b2aba5c383bb4ccf5d49d0a128f",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/workers/queue.py",
+      "sha256": "bb33e2f1de8da05c2fe030ed085cb82dd66295a71aed87c5f8bf1f9f984b0e3c",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/workstreams/attach.py",
+      "sha256": "a24daa9b769aa823f47b574b7230a0dfae202bb0cf4be4f0432ba783b18bf073",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "app/workstreams/service.py",
+      "sha256": "dfab136bd4652a53810c9917e11240ddfb63f72e337fbc4155f7f799b13f7adf",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "tests/fixtures/permission_corpus.py",
+      "sha256": "6b968ab3e0a2a67c71a06e406707211a77deed204e4e4cd53ea5d8a8a018027c",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "tests/test_authorized_retrieval.py",
+      "sha256": "7ef41f861f2c96af155e8d0acd677b4ec6a71ed988246f6ac354e33339d00a75",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "tests/test_chat_projection.py",
+      "sha256": "8901be58532593a38d6f26b3dc3d41e1874eac6717a792e79bfa6dec5ac2c6de",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "tests/test_embedding_permissions.py",
+      "sha256": "7bd3648aeb6097cccc0ba2e6ff49c954bad7184985dc0e1f3aa815dfbf1b8dab",
+      "provenance": "original implementation; byte-identical"
+    },
+    {
+      "path": "tests/test_permission_adapters.py",
+      "sha256": "6475218eebc4608bffd9713fa8edfcfdfa0dde51922f54d8f458414507e2bf03",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "tests/test_source_permissions.py",
+      "sha256": "0f2ae9ba5be37de71a0e2e3756f4e860cd9c6d00aa7bda8fbb59aba3e6885c86",
+      "provenance": "original implementation; identity labels/private domains replaced"
+    },
+    {
+      "path": "migrations/0001_baseline.sql",
+      "sha256": "a000ec6d6f513432fe454c1b51b0128f7f97a47850cbfc5526b28dea27e3315a",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0003_enforce_tenant_rls.sql",
+      "sha256": "279f1d0a9d9a792a124f398e3b1f737f9fc14c46ba083f6912be22da6de9f1d7",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0033_source_permission_policies.sql",
+      "sha256": "30e022381825d861212fe9b735818ce3ddc904c904dbfc359974693e1cd5c577",
+      "provenance": "original schema reference; trailing blank lines normalized"
+    },
+    {
+      "path": "migrations/0035_acl_envelope_fail_closed.sql",
+      "sha256": "2c4a3eb0014eca1b42d366b8f5cfb6602e5e5eef21184bebfd2f1d9858c9618a",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0036_principal_identity_mappings.sql",
+      "sha256": "30e2e8da8ceb4f1bc9eceb3d87c2ee54cfa4c4494ca5c000afbf0328e1927294",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0037_permission_audit_tables.sql",
+      "sha256": "68c4ea91bdf3544049996c110ac126b4dae32a4d81799a6c3e3a4006864b2a4c",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0038_principal_memberships.sql",
+      "sha256": "46381ff03d7c16cce9d54b8bd746413f991fc24149c294994ccb18651714eaf0",
+      "provenance": "original schema reference; byte-identical"
+    },
+    {
+      "path": "migrations/0039_context_pack_permission_request_metadata.sql",
+      "sha256": "96b8220a0310eacadb6ff6448e6affbc9a9b773c6cca3df46a97980fba3bf5c6",
+      "provenance": "original schema reference; byte-identical"
+    }
+  ]
+}
