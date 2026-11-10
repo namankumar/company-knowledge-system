@@ -1,6 +1,22 @@
 # Company Knowledge System
 
-Original backend implementation from a company-knowledge application: ingest source-shaped information, apply source permissions, build an audience-bound context pack, and answer questions with evidence references. This is the actual retrieval/answer/permission code, exported without private company records, credentials, connector configuration or Git history. It is separate from the file-based [Company OS workflows](https://github.com/namankumar/company-os-showcase).
+A company answer is only useful if you can see where it came from and you're allowed to read the underlying information.
+
+I built this backend to normalize information from connected sources, check access before retrieval, and carry evidence references through to the answer. The code covers ingestion, permissions, retrieval and answer synthesis. This public export leaves out company records, credentials and the original frontend.
+
+## Try the offline checks
+
+You'll need Python 3.12 and access to a package index for installation. No API key or company account is needed.
+
+```sh
+python3.12 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python tools/verify_offline.py
+```
+
+The runner blocks socket connections and exercises the original tests with fictional source records and fake database/model ports. You can inspect how the backend handles permissions, retrieval and answer presentation. These checks don't run a live model, a connector or Postgres RLS, and they don't measure generated-answer quality. The measured results are in [verification](docs/VERIFICATION.md).
+
+This is a backend source export. It isn't a complete app you can deploy from this checkout: the frontend, full ingestion workers and full migration chain aren't included. For file-based planning and research workflows, see [Company OS](https://github.com/namankumar/company-os-showcase).
 
 ## Follow the implementation
 
@@ -28,20 +44,8 @@ flowchart LR
 
 The retrieval path filters tenant, principal, access state and permission freshness before ranking. Context-pack policies reserve space for different evidence views. The legacy unscoped context-pack API is deliberately disabled. Selected original RLS/access migrations are included as schema references; they are not a complete deployment migration chain.
 
-## Run the original offline tests
-
-Python 3.12 is the verified interpreter. From a clean checkout:
-
-```sh
-python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python tools/verify_offline.py
-```
-
-Dependency installation needs a package index. The verification runner blocks socket connections before invoking the original tests. Tests use synthetic source/permission fixtures and fake database/model ports; they do not access a customer database or call a model/provider. Their results verify permission/retrieval and presentation mechanics within those fixtures, not live connector access, live Postgres RLS, deployment status, or generated-answer quality. See [verification](docs/VERIFICATION.md).
-
 ## Export scope
 
-This is a focused source export from an existing application, not a newly written toy implementation or a turnkey hosted service. Dependency modules used by the original retrieval and answer code are included so the selected original tests run without stubs replacing the product. Provider integration source is retained where imported; no keys or accounts are configured, and the offline verifier refuses network access.
+The export includes the dependency modules used by the retrieval and answer code, including provider integration source where imported. No keys or accounts are configured. The offline verifier refuses network access.
 
 Excluded: live source records and company documents, user/account databases, OAuth tokens and API keys, environment/deployment files, private logs/caches, administrative scripts, full ingestion workers, original application frontend, and private Git history. Identity labels and private email domains in source fixtures/policy have consistent reserved-example substitutions. The [export manifest](EXPORT-MANIFEST.json) records per-file provenance and content digests. No new license or third-party redistribution rights are asserted.
